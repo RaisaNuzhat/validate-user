@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flask-login-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://cloud:2r3Mh4rvf2Jdl9wX@cluster0.9odt6wv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
